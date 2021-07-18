@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Notepad_MainWindow</class>
+ <widget class="QMainWindow" name="Notepad_MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>739</width>
+    <height>583</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle">
+   <string>Notepad_MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QPlainTextEdit" name="plainTextEdit1">
+      <property name="minimumSize">
+       <size>
+        <width>720</width>
+        <height>0</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QTextEdit" name="textEdit_errors">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>720</width>
+        <height>100</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>3840</width>
+        <height>100</height>
+       </size>
+      </property>
+      <property name="acceptDrops">
+       <bool>false</bool>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>739</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionNew"/>
+    <addaction name="actionOpen"/>
+    <addaction name="actionSave"/>
+    <addaction name="actionSave_As"/>
+    <addaction name="actionPrint"/>
+    <addaction name="actionExist"/>
+   </widget>
+   <widget class="QMenu" name="menuEdit">
+    <property name="title">
+     <string>Edit</string>
+    </property>
+    <addaction name="actionCopy"/>
+    <addaction name="actionPaste"/>
+    <addaction name="actionCut"/>
+    <addaction name="actionUndo"/>
+    <addaction name="actionRedo"/>
+   </widget>
+   <widget class="QMenu" name="menuActions">
+    <property name="title">
+     <string>Actions</string>
+    </property>
+    <addaction name="actionDetect_Errors"/>
+    <addaction name="actionFix"/>
+    <addaction name="actionMinfy"/>
+    <addaction name="actionConvert_to_jason"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuEdit"/>
+   <addaction name="menuActions"/>
+  </widget>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="separator"/>
+   <addaction name="actionDetect_Errors"/>
+   <addaction name="actionFix"/>
+   <addaction name="actionMinfy"/>
+   <addaction name="actionConvert_to_jason"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionNew">
+   <property name="icon">
+    <iconset resource="Resources.qrc">
+     <normaloff>:/images/add-file.png</normaloff>:/images/add-file.png</iconset>
+   </property>
+   <property name="text">
+    <string>New</string>
+   </property>
+  </action>
+  <action name="actionOpen">
+   <property name="icon">
+    <iconset resource="Resources.qrc">
+     <normaloff>:/images/Icons/google/2x/outline_open_in_new_black_24dp.png</normaloff>:/images/Icons/google/2x/outline_open_in_new_black_24dp.png</iconset>
+   </property>
+   <property name="text">
+    <string>Open</string>
+   </property>
+  </action>
+  <action name="actionSave_As">
+   <property name="icon">
+    <iconset resource="Resources.qrc">
+     <normaloff>:/images/Icons/google/2x/outline_save_black_24dp.png</normaloff>:/images/Icons/google/2x/outline_save_black_24dp.png</iconset>
+   </property>
+   <property name="text">
+    <string>Save as</string>
+   </property>
+  </action>
+  <action name="actionPrint">
+   <property name="icon">
+    <iconset resource="Resources.qrc">
+     <normaloff>:/images/Icons/icons8-print-50.png</normaloff>:/images/Icons/icons8-print-50.png</iconset>
+   </property>
+   <property name="text">
+    <string>Print</string>
+   </property>
+  </action>
+  <action name="actionExist">
+   <property name="text">
+    <string>Exist</string>
+   </property>
+  </action>
+  <action name="actionCopy">
+   <property name="icon">
+    <iconset resource="Resources.qrc">
+     <normaloff>:/images/Icons/google/2x/outline_content_copy_black_24dp.png</normaloff>:/images/Icons/google/2x/outline_content_copy_black_24dp.png</iconset>
+   </property>
+   <property name="text">
+    <string>Copy</string>
+   </property>
+  </action>
+  <action name="actionCut">
+   <property name="icon">
+    <iconset resource="Resources.qrc">
+     <normaloff>:/images/Icons/google/2x/outline_content_cut_black_24dp.png</normaloff>:/images/Icons/google/2x/outline_content_cut_black_24dp.png</iconset>
+   </property>
+   <property name="text">
+    <string>Cut</string>
+   </property>
+  </action>
+  <action name="actionPaste">
+   <property name="icon">
+    <iconset resource="Resources.qrc">
+     <normaloff>:/images/paste-131964784935783245_256.ico</normaloff>:/images/paste-131964784935783245_256.ico</iconset>
+   </property>
+   <property name="text">
+    <string>Paste</string>
+   </property>
+  </action>
+  <action name="actionUndo">
+   <property name="icon">
+    <iconset resource="Resources.qrc">
+     <normaloff>:/images/Icons/undo-1325051879300270680_256.ico</normaloff>:/images/Icons/undo-1325051879300270680_256.ico</iconset>
+   </property>
+   <property name="text">
+    <string>Undo</string>
+   </property>
+  </action>
+  <action name="actionRedo">
+   <property name="icon">
+    <iconset resource="Resources.qrc">
+     <normaloff>:/images/Icons/redo-1324760616182504055_256.ico</normaloff>:/images/Icons/redo-1324760616182504055_256.ico</iconset>
+   </property>
+   <property name="text">
+    <string>Redo</string>
+   </property>
+  </action>
+  <action name="actionSave">
+   <property name="icon">
+    <iconset resource="Resources.qrc">
+     <normaloff>:/images/Icons/google/2x/outline_save_black_24dp.png</normaloff>:/images/Icons/google/2x/outline_save_black_24dp.png</iconset>
+   </property>
+   <property name="text">
+    <string>Save</string>
+   </property>
+  </action>
+  <action name="actionConvert_to_jason">
+   <property name="icon">
+    <iconset resource="Resources.qrc">
+     <normaloff>:/images/Icons/Jason.ico</normaloff>:/images/Icons/Jason.ico</iconset>
+   </property>
+   <property name="text">
+    <string>Convert to .jason</string>
+   </property>
+  </action>
+  <action name="actionDetect_Errors">
+   <property name="text">
+    <string>Detect Errors</string>
+   </property>
+  </action>
+  <action name="actionFix">
+   <property name="icon">
+    <iconset resource="Resources.qrc">
+     <normaloff>:/images/Icons/icon-hammer-10.jpg</normaloff>:/images/Icons/icon-hammer-10.jpg</iconset>
+   </property>
+   <property name="text">
+    <string>Fix</string>
+   </property>
+  </action>
+  <action name="actionMinfy">
+   <property name="text">
+    <string>Minfy</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="Resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>
